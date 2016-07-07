@@ -27,6 +27,7 @@ public class MappingController {
 		return "Mapped by path + method";
 	}
 
+	//相同的请求路径，参数不同，那么其处理的方法就有可能不同
 	@RequestMapping(value="/mapping/parameter", method=RequestMethod.GET, params="foo")
 	public @ResponseBody String byParameter() {
 		return "Mapped by path + method + presence of query parameter!";
@@ -49,7 +50,7 @@ public class MappingController {
 
 	@RequestMapping(value="/mapping/consumes", method=RequestMethod.POST, consumes=MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody String byConsumes(@RequestBody JavaBean javaBean) {
-		return "Mapped by path + method + consumable media type (javaBean '" + javaBean + "')";
+		return "Mapped by path + method + consumable media type (javaBean '" + javaBean.getFruit() + "')";
 	}
 
 	@RequestMapping(value="/mapping/produces", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)

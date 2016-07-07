@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
-
+	<!-- 业务层的 spring 容器配置 -->
 	<!--
 		CSRF protection. Here we only include the CsrfFilter instead of all of Spring Security.
 		See http://docs.spring.io/spring-security/site/docs/3.2.x/reference/htmlsingle/#csrf for more information on

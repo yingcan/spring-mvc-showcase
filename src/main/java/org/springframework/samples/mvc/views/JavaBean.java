@@ -3,7 +3,7 @@ package org.springframework.samples.mvc.views;
 import javax.validation.constraints.NotNull;
 
 public class JavaBean {
-	
+	//Spring —È÷§
 	@NotNull
 	private String foo;
 

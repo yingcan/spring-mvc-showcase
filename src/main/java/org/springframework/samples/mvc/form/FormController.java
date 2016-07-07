@@ -19,7 +19,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class FormController {
 
 	// Invoked on every request
-
+	//此Controller 的所有方法在执行之前先执行此 ajaxAttribute方法
 	@ModelAttribute
 	public void ajaxAttribute(WebRequest request, Model model) {
 		model.addAttribute("ajaxRequest", AjaxUtils.isAjaxRequest(request));

@@ -1,4 +1,8 @@
 /*
+ * son2.js提供了json的序列化和反序列化方法，
+ * 可以将一个json对象转换成json字符串，
+ * 也可以将一个json字符串转换成一个json对象。
+ 
     http://www.JSON.org/json2.js
     2010-03-20
 

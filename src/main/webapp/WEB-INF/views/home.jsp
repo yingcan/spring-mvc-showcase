@@ -119,6 +119,9 @@
 				<a id="header" class="textLink" href="<c:url value="/data/header" />">Header</a>
 			</li>
 			<li>
+				<a id="header" class="textLink" href="<c:url value="/data/cookie" />">cookie</a>
+			</li>
+			<li>
 				<form id="requestBody" class="textForm" action="<c:url value="/data/body" />" method="post">
 					<input id="requestBodySubmit" type="submit" value="Request Body" />
 				</form>

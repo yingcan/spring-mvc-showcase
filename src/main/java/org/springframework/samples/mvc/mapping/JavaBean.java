@@ -3,11 +3,12 @@ package org.springframework.samples.mvc.mapping;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
+//自动加载页面的请求参数至此POJO中
 public class JavaBean {
 
-	private String foo = "bar";
+	private String foo = "";
 
-	private String fruit = "apple";
+	private String fruit = "";
 
 	public String getFoo() {
 		return foo;

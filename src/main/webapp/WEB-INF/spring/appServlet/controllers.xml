@@ -10,6 +10,7 @@
 	<!-- Maps '/' requests to the 'home' view -->
 	<mvc:view-controller path="/" view-name="home"/>
 	
+	<!-- 使Spring 扫描org.springframework.samples.mvc 包下所有类，让标注Spring 注解的类生效 -->
 	<context:component-scan base-package="org.springframework.samples.mvc" />
 	 
 </beans>
